@@ -31,3 +31,16 @@ personalMovieDB.movies[a]= b;
 personalMovieDB.movies[c]= d;
 console.log(personalMovieDB);
 ```
+## Projects:
+* d0k9 (learning projects) (HTML, CSS, JavaScript, Java)
+
+## Links:
+* [GitHub](https://github.com/d0k9)
+
+## Education:
+* BASE OF WEB-UI DEVELOPMENT - Prometheus, 2022 
+* THE FUNDAMENTALS OF SOFTWARE TESTING - QATestLab, 2020 
+* HTML/CSS/JAVASCRIPT - CyberBionic Systematics, 2016 
+
+## Language
+* A2 (Intermediate) English
