@@ -1,80 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <h1>Vladyslav Dokukin</h1>
-        <img src="avatar.webp" class="avatar" alt=""my_avatar">
-        <h2>Contacts:</h2>
-        <ul>
-            <li>
-                <a href="mailto:vladyslav.dokukin@gmail.com">vladyslav.dokukin@gmail.com</a>
-            </li>
-            <li>
-                <a href="tel:+3805035333**">+3805035333**</a>
-            </li>
-        </ul>
+    <header class="container">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#code-example" class="nav-link">Code example</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#links" class="nav-link">Links</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <h2>Passion:</h2>
-        <p>Passionate about frontend development I graduated from IT-courses and in the direction of frontend and continue
-            to study independently on YouTube & Prometheus, solve tasks on codewars. I am interested in the latest
-            technologies. I want to realize my abilities and skills in real projects.</p>
-        <h2>Skills:</h2>
-        <ul>
-            <li>JS</li>
-            <li>HTML&CSS</li>
-            <li>Git</li>
-            <li>Photoshop</li>
-        </ul>
-        <h2>Code example:</h2>
-        <pre><code>const numberOfMovies = +prompt("Сколько фильмов вы уже просмотрели", "");
-const personalMovieDB = {
-    count: numberOfMovies,
-    movies: {},
-    actors: {},
-    genres: [],
-    private: false,
-};
-const a = prompt("Один из последних просмотренных фильмов?", ""),
-    b = +prompt("На сколько оцените его?", ""),
-    c = prompt("Один из последних просмотренных фильмов?", ""),
-    d = +prompt("На сколько оцените его?", "");
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
-console.log(personalMovieDB);
-</code></pre>
-        <h2>Projects:</h2>
-        <ul>
-            <li>d0k9 (learning projects) (HTML, CSS, JavaScript, Java)</li>
-        </ul>
-        <h2>Links:</h2>
-        <ul>
-            <li>
-                <a href="https://github.com/d0k9">GitHub</a>
-            </li>
-        </ul>
-        <h2>Education:</h2>
-        <ul>
-            <li>BASE OF WEB-UI DEVELOPMENT - Prometheus, 2022</li>
-            <li>THE FUNDAMENTALS OF SOFTWARE TESTING - QATestLab, 2020</li>
-            <li>HTML/CSS/JAVASCRIPT - CyberBionic Systematics, 2016</li>
-        </ul>
-        <h2>Language</h2>
-        <ul>
-            <li>A2 (Intermediate) English</li>
-        </ul>
+    <main class="main-container">
+        <section class="section" id="profile">
+            <h1 class="section-title">Vladyslav Dokukin</h1>
+            <h2>Frontend Developer</h2>
+            <img src="assets/avatar.webp" class="avatar" alt="my_avatar">
+        </section>
+        <section class="section" id="contacts">
+            <h2 class="section-title">Contacts:</h2>
+            <ul>
+                <li>
+                    <a href="mailto:vladyslav.dokukin@gmail.com">vladyslav.dokukin@gmail.com</a>
+                </li>
+                <li>
+                    <a href="tel:+3805035333**">+3805035333**</a>
+                </li>
+                <li>
+                    Discord: @d0k#1513
+                </li>
+            </ul>
+        </section>
+        <section class="section" id="summary">
+            <h2 class="section-title">Summary:</h2>
+            <p>Passionate about frontend development I graduated from IT-courses and in the direction of frontend and
+                continue
+                to study independently on YouTube & Prometheus, solve tasks on codewars. I am interested in the latest
+                technologies. I want to realize my abilities and skills in real projects.</p>
+        </section>
+        <section class="section" id="skills">
+            <h2 class="section-title">Skills:</h2>
+            <ul>
+                <li>JS</li>
+                <li>HTML&CSS</li>
+                <li>Git</li>
+                <li>Photoshop</li>
+            </ul>
+        </section>
+        <section class="section" id="projects">
+            <h2 class="section-title">Projects:</h2>
+            <ul>
+                <li><a href="https://d0k9.github.io/prometheus-x-course-task/">Prometheus-x-course-task (HTML, CSS,
+                        JavaScript, Java)</a></li>
+            </ul>
+        </section>
+        <section class="section" id="links">
+            <h2 class="section-title">Links:</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/d0k9">GitHub</a>
+                </li>
+            </ul>
+        </section>
+        <section class="section" id="code-example">
+            <h2 class="section-title">Code example:</h2>
+            <pre>
+            <code>
+                function removeChar(str){
+                     return str.slice(1, -1);
+                   };
+            </code>
+        </pre>
+        </section>
+        <section class="section" id="education">
+            <h2 class="section-title">Education:</h2>
+            <ul>
+                <li>BASE OF WEB-UI DEVELOPMENT - Prometheus, 2022</li>
+                <li>THE FUNDAMENTALS OF SOFTWARE TESTING - QATestLab, 2020</li>
+                <li>HTML/CSS/JAVASCRIPT - CyberBionic Systematics, 2016</li>
+            </ul>
+        </section>
+        <section class="section" id="english">
+            <h2 class="section-title">English</h2>
+            <ul>
+                <li>A2 (Intermediate)</li>
+            </ul>
+        </section>
     </main>
-    <footer>
-
+    <footer class="container">
+        <a href="https://github.com/d0k9">GitHub</a>
+        <p class="year">2023</p>
+        <a href="https://rs.school/js-stage0/"><img class="rslogo" src="assets/logo-rsschool3.png"
+                alt="link to course"></a>
     </footer>
 </body>
 </html>

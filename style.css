@@ -1,12 +1,61 @@
+html {
+    scroll-behavior: smooth; 
+  }
+
+* {
+    box-sizing: border-box;
+}
+
 body, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
     padding: 0;
   }
   
   body {
-    font-family: Arial, sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+
+  .nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+  }
+
+  .nav-link {
+    transition: .3s;
+  }
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .section {
+    width: 50%;
+  }
+
+  .section-item a {
+    color: #829985;
+    text-decoration: none;  
+    transition: color 0.5s;
+  }
+  .section-item a:hover {
+    color: #4d2323;
   }
   
   h1 {
@@ -17,13 +66,14 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   
   .avatar {
     width: 100px;
-    height: 100px;
+    min-height: 100px;
   }
-  
-  h2 {
+
+  .section-title {
     font-size: 24px;
     font-weight: bold;
     margin: 20px 0 10px;
+    text-transform: uppercase;
   }
   
   ul {
@@ -45,34 +95,36 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
     text-decoration: underline;
   }
   
-  header {
-    margin-bottom: 40px;
-  }
-  
-  main {
-    margin-bottom: 40px;
-  }
-  
-  pre {
-    background-color: #F5F5F5;
-    padding: 10px;
-    margin-bottom: 20px;
-    overflow-x: auto;
-  }
-  
   code {
     font-family: Consolas, monospace;
   }
   
   footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
     padding: 20px;
     background-color: #EEE;
+  }
+
+  .year {
+    padding: 20px;
   }
   
   @media (max-width: 768px) {
     body {
       font-size: 14px;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+    .section {
+        width: 100%;
     }
   
     h1 {
@@ -82,4 +134,9 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
     h2 {
       font-size: 20px;
     }
+  }
+
+  .rslogo {
+    width: 100px;
+    min-height: 30px;
   }
